@@ -55,8 +55,8 @@ a:hover {
 }
 
 .btn {
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 600;
     padding: 1rem 2.4rem;
     width: fit-content;
     border-radius: 0.4rem;
@@ -86,6 +86,22 @@ html {
     margin: 0 auto;
 }
 
+.heading-1 {
+    font-size: 5.5rem;
+}
+
+.heading-2 {
+    font-size: 4.4rem;
+}
+
+.desc-1 {
+    font-size: 1.8rem;
+}
+
+.desc-2 {
+    font-size: 1.6rem;
+}
+
 
 /* Header & Nav */
 
@@ -93,6 +109,10 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav_menu {
+    margin-left: -18rem;
 }
 
 .nav_list {
@@ -106,6 +126,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3.2rem;
+}
+
+.nav_buttons .nav_btn_1 {
+    color: #667085;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .nav_buttons .nav_btn_2{
@@ -114,4 +141,73 @@ html {
     font-style: 1.8rem;
     padding: 1rem 2.7rem;
     border: 1px solid #1A1E42
+}
+
+.nav_logo {
+    font-family: "Montserrat", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1A1E42;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #667085;
+}
+
+/* Home */
+
+.home_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.home_left {
+    flex: 1;
+    padding: 0 82px;
+}
+
+.home_right .home_img {
+    width: 537px;
+}
+
+.home_head h1 {
+    font-weight: 600;
+    color: #1A1E42;
+}
+
+.home_head span {
+    color: #F7931A;
+}
+
+.home_head .home_desc{
+    font-size: 1.8rem;
+    color: #1A1E42CC;
+    font-weight: 400;
+    margin-top: 2.4rem;
+    margin-bottom: 4.8rem;
+}
+
+.head_logos {
+    color: #98A2B3;
+    margin-top: 8rem;
+}
+
+.head_logo_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.head_logo_content img {
+    width: initial;
+}
+
+.head_logo_contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
 }
