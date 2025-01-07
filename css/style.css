@@ -45,9 +45,6 @@ li {
 a {
   text-decoration: none;
   display: inline-block;
-  color: black;
-  font-size: 2.4rem;
-  font-weight: bold;
 }
 
 a:hover {
@@ -122,6 +119,9 @@ html {
     gap: 3.2rem;
 }
 
+
+
+
 .nav_buttons {
     display: flex;
     justify-content: center;
@@ -154,7 +154,41 @@ html {
     font-size: 1.6rem;
     font-weight: 600;
     color: #667085;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown_menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown_menu a:hover {
+    background-color: #ddd;
+  }
+  
+
+.show {
+    display: block;
+}
+
+
 
 /* Home */
 
@@ -171,6 +205,7 @@ html {
 
 .home_right .home_img {
     width: 537px;
+    object-fit: contain;
 }
 
 .home_head h1 {
@@ -199,15 +234,30 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 1.5rem;
-}
-
-.head_logo_content img {
-    width: initial;
+    column-gap: .8rem;
 }
 
 .head_logo_contents {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
+    width: 542px;
+    margin: 1.6rem 0;
+}
+
+.head_img {
+    width: 40px;
+    height: 40px;
+    place-items: center;
+}
+
+.head_img img {
+    object-fit: contain;
+}
+
+.home_logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4.8rem;
 }
